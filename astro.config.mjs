@@ -4,6 +4,6 @@ import react from "@astrojs/react";
 
 // https://astro.build/config
 export default defineConfig({
-  base: import.meta.env.BASE_PATH,
+  base: process.env.BASE_PATH,
   integrations: [react()],
 });
