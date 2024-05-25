@@ -24,7 +24,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@ant-design/cssinjs@npm:^1.19.1":
+"@ant-design/cssinjs@npm:1.20.0, @ant-design/cssinjs@npm:^1.19.1":
   version: 1.20.0
   resolution: "@ant-design/cssinjs@npm:1.20.0"
   dependencies:
@@ -5884,6 +5884,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "test@workspace:."
   dependencies:
+    "@ant-design/cssinjs": "npm:1.20.0"
     "@astrojs/check": "npm:0.7.0"
     "@astrojs/react": "npm:3.4.0"
     "@types/react": "npm:18.3.3"

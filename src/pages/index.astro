@@ -1,10 +1,22 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import { LoginForm } from '../components/LoginForm.tsx';
+import { LoginForm } from '../components/LoginForm';
+import { getInlineStyles } from '../helpers/ssr-styles';
+
+const style = getInlineStyles(LoginForm)
 ---
 
 <Layout title="Welcome to Astro.">
 	<main>
-		<LoginForm />
+		<LoginForm client:visible />
 	</main>
 </Layout>
+
+<style set:html={style}></style>
+
+<style>
+	main {
+		margin: 16px;
+		padding: 16px;
+	}
+</style>
